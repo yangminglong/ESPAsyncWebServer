@@ -288,7 +288,7 @@ bool AsyncWebServerRequest::_parseReqHead(){
   } else if(m == "ANY"){
     _method = HTTP_ANY;
   }else{
-    _method = HTTP_VERBFAIL;
+    _method = HTTP_RESERVED;
   }
 
   String g = String();
